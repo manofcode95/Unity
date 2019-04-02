@@ -7,16 +7,20 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  padding: 5rem 3rem;
 
   & > *:not(:last-child) {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
   }
 
   &__icon {
     width: 30px;
     height: 30px;
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
   }
 
   &__name {
@@ -24,5 +28,20 @@
     background: black;
     color: white;
     font-size: 4rem;
+    font-family: $font-1;
+    font-weight: 700;
+    padding: 0 1rem;
+  }
+
+  &__intro {
+    display: flex;
+    align-items: center;
+    & > *:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+
+  &__intro-text {
+    font-size: 1.6rem;
   }
 }
