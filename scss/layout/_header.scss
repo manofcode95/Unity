@@ -1,0 +1,28 @@
+.header {
+  background-image: url("../img/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & > *:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  &__name {
+    text-transform: uppercase;
+    background: black;
+    color: white;
+    font-size: 4rem;
+  }
+}
