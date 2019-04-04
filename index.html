@@ -8,12 +8,37 @@
     <link rel="stylesheet" href="./css/style.css" />
     <!-- FONT -->
     <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Poppins:400,500,600,700"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
       rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700"
+      rel="stylesheet"
+    />
+
+    <!-- WOW -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+
+    <!-- Slick -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <!-- AWESOME Font -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
     />
   </head>
   <body>
-    <header class="header">
+    <!-- HEADER -->
+    <header class="header wow fadeIn">
       <div class="header__name">unity</div>
       <div class="header__social-media">
         <svg class="header__icon">
@@ -47,7 +72,9 @@
         discover
       </a>
     </header>
-    <section class="services">
+
+    <!-- SERVICE SECTION-->
+    <section class="services wow fadeInLeft" data-wow-offset="300">
       <div class="services__details">
         <p class="services__text">Services</p>
         <h2 class="heading-2">
@@ -58,16 +85,549 @@
           Our passion is to create solutions which could give that extra value
           to your project, service or to business in general.
         </p>
-        <div class="services__nums">
-          <p class="circle__num">1</p>
-          <p class="circle__num">2</p>
-          <p class="circle__num">3</p>
+        <div class="services__nums mt-4">
+          <p class="circle-num circle-num--active">1</p>
+          <p class="circle-num">2</p>
+          <p class="circle-num">3</p>
         </div>
       </div>
       <div class="services__img-box">
-        <div class="services__bg"></div>
-        <img src="./img/laptop.png" alt="" class="services__img" />
+        <div class="services__bg">
+          <img src="./img/laptop-2.png" alt="image" class="services__img" />
+          <div class="services__arrow-box">
+            <div class="services__arrow-left">
+              <svg class="services__icon">
+                <use href="./img/sprite.svg#icon-arrow-thin-left"></use>
+              </svg>
+            </div>
+            <div class="services__arrow-right">
+              <svg class="services__icon">
+                <use href="./img/sprite.svg#icon-arrow-thin-right"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- INTRO SECTION -->
+    <section class="intro wow fadeInRight" data-wow-offset="200">
+      <div class="intro__details">
+        <h2 class="heading-2">
+          Designer & coder
+        </h2>
+        <p class="intro__text mt-3">
+          Hello, World! I am freelance graphic designer and website developer
+          who provides full-service website management and WordPress
+          specialization. I recently provided website design services to the
+          business below.
+        </p>
+        <div class="intro__sign-box">
+          <div class="horizontal-dash"></div>
+          <img class="intro__signature" src="./img/sign.png" alt="image" />
+        </div>
+        <div class="intro__quote">&ldquo;</div>
+      </div>
+      <div class="intro__slide-box">
+        <div class="intro__slide">
+          <div class="intro__slide-icon">
+            <svg class="intro__icon intro__icon--up">
+              <use href="./img/sprite.svg#icon-arrow-thin-up"></use>
+            </svg>
+          </div>
+          <div class="intro__num-box">
+            <div class="intro__num">01</div>
+            <div class="intro__num intro__num--active">02</div>
+            <div class="intro__num">03</div>
+            <div class="intro__num">04</div>
+            <div class="intro__num">05</div>
+          </div>
+          <div class="intro__slide-icon">
+            <svg class="intro__icon intro__icon--down">
+              <use href="./img/sprite.svg#icon-arrow-thin-down"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery wow fadeIn" data-wow-offset="400">
+      <h2 class="gallery__heading heading-2 mb-4">What have we done.</h2>
+      <p class="gallery__intro">
+        Our passion is to create solutions which could give that extra value to
+        your product, service or business in general.
+      </p>
+      <ul class="gallery__list">
+        <li class="gallery__item gallery__item--active" data-filter="*">all</li>
+        <li class="gallery__item" data-filter=".design">web design</li>
+        <li class="gallery__item" data-filter=".mobile">mobile</li>
+        <li class="gallery__item" data-filter=".photgraphy">photography</li>
+      </ul>
+      <div class="gallery__box">
+        <div class="photos-show">
+          <img
+            src="./img/image4.png"
+            alt="image"
+            class="photos-show__photo mobile"
+          />
+          <img
+            src="./img/image5.png"
+            alt="image"
+            class="photos-show__photo mobile photgraphy design"
+          />
+          <img
+            src="./img/image6.png"
+            alt="image"
+            class="photos-show__photo design photgraphy"
+          />
+          <img
+            src="./img/image7.png"
+            alt="image"
+            class="photos-show__photo design photography mobile"
+          />
+          <img
+            src="./img/image8.png"
+            alt="image"
+            class="photos-show__photo mobile photgraphy"
+          />
+          <img
+            src="./img/image9.png"
+            alt="image"
+            class="photos-show__photo design photgraphy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- TASKS SECTION -->
+    <section class="tasks wow fadeIn">
+      <h2 class="heading-2 tasks__heading mb-4">
+        <span>Your money</span>
+        <span>
+          is yours, we don't Take a cut
+        </span>
+      </h2>
+      <p class="tasks__text">
+        Our passion is to create solutions which could give that extra value to
+        your product, service or business in general.
+      </p>
+      <div class="vertical-dash mt-5 mb-5"></div>
+      <div class="tasks__list">
+        <div class="tasks__item">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 272.434 272.434"
+            class="tasks__icon"
+          >
+            <path
+              d="M208.084 75.85V59.095c0-31.857-25.918-57.775-57.774-57.775h-1.046c-31.857 0-57.775 25.918-57.775 57.775v52.193c0 21.663-17.624 39.287-39.286 39.287h-.915C29.624 150.575 12 132.951 12 111.288V7.32a6 6 0 0 0-12 0v103.968c0 28.279 23.007 51.287 51.287 51.287h.915c28.279 0 51.286-23.007 51.286-51.287V59.095c0-25.241 20.535-45.775 45.775-45.775h1.046c25.24 0 45.774 20.535 45.774 45.775v16.808c-35.582 2.915-63.65 32.785-63.65 69.106v56.745c0 38.246 31.114 69.36 69.359 69.36h1.28c24.798 0 47.87-13.378 60.214-34.914a6 6 0 1 0-10.41-5.967c-10.212 17.815-29.295 28.881-49.804 28.881h-1.28c-31.628 0-57.359-25.732-57.359-57.36v-56.745c0-29.702 22.693-54.199 51.65-57.074v62.64h-32.867a6 6 0 0 0 0 12h97.217v23.642a6 6 0 0 0 12 0v-41.208c.001-36.559-28.436-66.58-64.349-69.159zm0 74.725V87.881c29.29 2.549 52.35 27.189 52.35 57.128v5.566h-52.35z"
+            />
+          </svg>
+          <h3 class="heading-3 mt-3 mb-3">Design</h3>
+          <p>
+            Brings a wonderful artistic sense to each project, and he balances
+            that with a strong attention to the users's need
+          </p>
+        </div>
+        <div class="tasks__item">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 470 470"
+            class="tasks__icon"
+          >
+            <path
+              d="M202.5 405.883V285.675c0-4.143-3.357-7.5-7.5-7.5h-50c-4.143 0-7.5 3.357-7.5 7.5s3.357 7.5 7.5 7.5h42.5v112.708c-14.315 3.396-25 16.278-25 31.617 0 17.921 14.579 32.5 32.5 32.5s32.5-14.579 32.5-32.5c0-15.339-10.685-28.221-25-31.617zM195 455c-9.649 0-17.5-7.851-17.5-17.5S185.351 420 195 420s17.5 7.851 17.5 17.5S204.649 455 195 455zM282.5 405.883V285.675c0-4.143-3.357-7.5-7.5-7.5h-49.999c-4.143 0-7.5 3.357-7.5 7.5s3.357 7.5 7.5 7.5H267.5v112.708c-14.315 3.396-25 16.278-25 31.617 0 17.921 14.579 32.5 32.5 32.5s32.5-14.579 32.5-32.5c0-15.339-10.685-28.221-25-31.617zM275 455c-9.649 0-17.5-7.851-17.5-17.5S265.351 420 275 420s17.5 7.851 17.5 17.5S284.649 455 275 455zM410 355c-15.339 0-28.221 10.685-31.617 25H362.5v-94.325c0-4.143-3.357-7.5-7.5-7.5h-50c-4.143 0-7.5 3.357-7.5 7.5s3.357 7.5 7.5 7.5h42.5V387.5c0 4.143 3.357 7.5 7.5 7.5h23.383c3.396 14.315 16.278 25 31.617 25 17.921 0 32.5-14.579 32.5-32.5S427.921 355 410 355zm0 50c-9.649 0-17.5-7.851-17.5-17.5S400.351 370 410 370s17.5 7.851 17.5 17.5S419.649 405 410 405z"
+            />
+            <path
+              d="M452.141 161.557c-10.108-12.55-23.837-21.848-39.113-26.592-1.72-35.503-16.45-68.628-41.84-93.806C344.422 14.617 308.922 0 271.226 0 221.725 0 175.92 25.812 150.16 67.787a64.41 64.41 0 0 0-19.434-2.972c-30.637 0-56.983 21.626-63.336 51.105C28.044 126.127 0 161.988 0 203.101c0 49.667 40.406 90.074 90.073 90.074H107.5V380H91.617C88.221 365.685 75.339 355 60 355c-17.921 0-32.5 14.579-32.5 32.5S42.079 420 60 420c15.339 0 28.221-10.685 31.617-25H115c4.143 0 7.5-3.357 7.5-7.5V285.675c0-4.143-3.357-7.5-7.5-7.5H90.073C48.678 278.175 15 244.497 15 203.101c0-35.723 25.395-66.688 60.383-73.627a7.498 7.498 0 0 0 5.978-6.383c3.229-24.671 24.451-43.275 49.365-43.275a49.451 49.451 0 0 1 19.756 4.08 7.5 7.5 0 0 0 9.543-3.254C182.409 40.152 225.019 15 271.226 15c69.384 0 126.34 56.438 126.966 125.812a7.499 7.499 0 0 0 5.809 7.239c30.028 6.949 51 33.351 51 64.203 0 36.349-29.571 65.921-65.92 65.921H385c-4.143 0-7.5 3.357-7.5 7.5s3.357 7.5 7.5 7.5h4.08c44.619 0 80.92-36.301 80.92-80.921 0-18.395-6.343-36.4-17.859-50.697zM60 405c-9.649 0-17.5-7.851-17.5-17.5S50.351 370 60 370s17.5 7.851 17.5 17.5S69.649 405 60 405z"
+            />
+            <path
+              d="M365.692 148.605h.069a7.501 7.501 0 0 0 7.432-7.568 100.92 100.92 0 0 0-6.931-35.931 7.501 7.501 0 0 0-13.973 5.457 85.954 85.954 0 0 1 5.903 30.61 7.501 7.501 0 0 0 7.5 7.432zM338.278 86.756a7.482 7.482 0 0 0 5.786 2.724 7.5 7.5 0 0 0 5.778-12.277C330.312 53.56 301.657 40 271.227 40c-4.143 0-7.5 3.357-7.5 7.5s3.357 7.5 7.5 7.5c25.94 0 50.379 11.574 67.051 31.756z"
+            />
+          </svg>
+          <h3 class="heading-3 mt-3 mb-3">Development</h3>
+          <p>
+            Plus, he's kind and understanding as he works with clients who might
+            not necessarily have technical knowledge of website
+          </p>
+        </div>
+        <div class="tasks__item">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 511.999 511.999"
+            class="tasks__icon"
+          >
+            <path
+              d="M481.091 27.937H30.909C13.866 27.937 0 41.803 0 58.846v310.819c0 17.043 13.866 30.909 30.909 30.909h154.26v22.49c0 20.617-16.774 37.391-37.391 37.391h-33.997c-6.518 0-11.803 5.284-11.803 11.803 0 6.519 5.285 11.803 11.803 11.803h284.436c6.518 0 11.803-5.284 11.803-11.803 0-6.519-5.285-11.803-11.803-11.803h-33.998c-20.617 0-37.391-16.774-37.391-37.391v-22.489h154.26c17.043 0 30.91-13.866 30.91-30.909V58.846c.002-17.043-13.864-30.909-30.907-30.909zM195.92 460.457c8.046-10.336 12.857-23.308 12.857-37.391v-22.49h94.447v22.49c0 14.083 4.811 27.056 12.857 37.391H195.92zm292.474-90.791c0 4.027-3.276 7.304-7.304 7.304H30.909c-4.027 0-7.304-3.276-7.304-7.304v-62.033h464.789v62.033zm0-85.64H23.606V58.846c0-4.027 3.276-7.304 7.304-7.304h450.18c4.027 0 7.305 3.276 7.305 7.304v225.18z"
+            />
+            <circle cx="256.003" cy="342.305" r="12.738" />
+            <path
+              d="M276.238 109.254c-4.61-4.609-12.081-4.609-16.693 0l-83.414 83.414c-4.609 4.609-4.609 12.083 0 16.693a11.767 11.767 0 0 0 8.347 3.457c3.022 0 6.041-1.152 8.346-3.457l83.414-83.414c4.609-4.609 4.609-12.083 0-16.693zM325.678 157.593c-4.608-4.609-12.079-4.609-16.692-.001l-33.23 33.228c-4.609 4.61-4.609 12.084 0 16.693a11.765 11.765 0 0 0 8.346 3.457c3.02 0 6.041-1.152 8.346-3.457l33.23-33.228c4.609-4.609 4.609-12.083 0-16.692z"
+            />
+          </svg>
+          <h3 class="heading-3 mt-3 mb-3">Deployment</h3>
+          <p>
+            Siamo persone con un pensiero fisso. E’ il web, è tecnologia. Lo
+            amiamo, lo conosciamo da professionisti
+          </p>
+        </div>
+        <div class="tasks__item">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 511.999 511.999"
+            class="tasks__icon"
+          >
+            <path
+              d="M453.034 361.322a7.514 7.514 0 0 0-8.19 1.628l-82.126 82.126a7.514 7.514 0 0 0 5.315 12.829h82.126a7.514 7.514 0 0 0 7.515-7.515v-82.126a7.517 7.517 0 0 0-4.64-6.942zm-66.861 81.554l56.469-56.469v56.469h-56.469z"
+            />
+            <path
+              d="M507.361 240.867a7.514 7.514 0 0 0-8.19 1.628l-22.507 22.507V111.971a7.515 7.515 0 0 0-7.515-7.515h-57.741l20.96-20.96.009-.01 20.196-20.196c4.327-4.327 6.71-10.083 6.71-16.203s-2.383-11.874-6.71-16.203L429.219 7.53C424.892 3.203 419.136.82 413.016.82s-11.875 2.383-16.203 6.71l-20.206 20.206-24.416 24.416-52.303 52.303H66.62V30.11a7.515 7.515 0 0 0-7.515-7.515C26.515 22.597 0 49.11 0 81.702v319.186c0 .555.064 1.095.178 1.615 1.038 13.829 7.021 26.678 17.02 36.432C27.886 449.359 41.995 455.1 56.927 455.1h229.638l-43.249 43.249a7.516 7.516 0 0 0 5.314 12.829h255.855a7.515 7.515 0 0 0 7.515-7.515V247.81a7.517 7.517 0 0 0-4.639-6.943zM407.443 18.159c3.072-3.074 8.077-3.074 11.149 0l23.355 23.355c3.074 3.073 3.074 8.076 0 11.15l-14.891 14.892-34.506-34.505 14.893-14.892zm-25.521 25.52l34.505 34.504-13.789 13.789-34.503-34.504 13.787-13.789zm115.05 288.573h-13.865a7.514 7.514 0 0 0-7.515 7.515 7.514 7.514 0 0 0 7.515 7.515h13.865v22.646h-13.865c-4.151 0-7.515 3.364-7.515 7.515s3.364 7.515 7.515 7.515h13.865v22.645h-13.865a7.514 7.514 0 0 0-7.515 7.515 7.514 7.514 0 0 0 7.515 7.515h13.865v22.646h-13.865a7.515 7.515 0 1 0 0 15.03h13.865v35.842h-230.2l75.908-75.907a7.515 7.515 0 0 0 0-10.628 7.572 7.572 0 0 0-1.078-.889 7.514 7.514 0 0 0-9.551.889l-30.456 30.456H56.928c-22.792 0-41.14-17.794-41.862-40.545a44.19 44.19 0 0 1 .332-4.244l.003-.024c.084-.665.185-1.327.3-1.985l.04-.225a43.474 43.474 0 0 1 1.057-4.494c.11-.382.224-.763.345-1.14.121-.377.25-.75.381-1.123.091-.261.181-.522.279-.781.183-.492.377-.979.577-1.462.057-.139.113-.28.172-.419.257-.6.524-1.193.806-1.779l.035-.075c5.878-12.164 17.183-21.233 30.75-24.047l.114-.025c.622-.127 1.25-.236 1.882-.337.105-.017.21-.038.317-.054a44.641 44.641 0 0 1 1.725-.22c.162-.018.323-.043.486-.059a44.442 44.442 0 0 1 1.681-.128c.178-.011.356-.03.534-.039a44.298 44.298 0 0 1 2.223-.056 7.515 7.515 0 0 0 7.515-7.515v-54.489a7.515 7.515 0 1 0-15.03 0v47.447c-12.69 1.605-24.469 7.265-33.757 16.335a60.423 60.423 0 0 0-2.805 2.954V81.702c0-21.741 15.826-39.858 36.561-43.436V264.749a7.516 7.516 0 0 0 15.03 0V119.486h218.24l-41.544 41.544a7.515 7.515 0 0 0 10.627 10.628l54.373-54.373.005-.005 49.185-49.185 34.503 34.505-4.048 4.048-.01.009-151.528 151.53-34.504-34.504 29.868-29.868a7.515 7.515 0 0 0-10.627-10.628l-35.183 35.182a7.546 7.546 0 0 0-.529.591c-.055.068-.104.141-.156.212-.106.141-.21.283-.307.431-.055.086-.105.174-.157.263a6.301 6.301 0 0 0-.371.714 7.526 7.526 0 0 0-.186.447c-.02.053-.046.103-.065.156l-14.641 41.475-9.982 28.279a7.599 7.599 0 0 0-.298 1.143h-24.992a7.515 7.515 0 1 0 0 15.03h208.114a7.514 7.514 0 0 0 7.515-7.515 7.514 7.514 0 0 0-7.515-7.515H193.093l45.83-16.178c.038-.014.074-.033.112-.047.178-.066.353-.14.526-.219.069-.032.138-.062.205-.095.18-.09.357-.189.531-.295.056-.034.114-.065.169-.1.181-.116.357-.243.53-.377.043-.033.088-.062.13-.096.209-.168.414-.349.608-.543l154.644-154.643h65.255v160.546L354.137 387.53a7.515 7.515 0 1 0 10.628 10.628l.003-.003L496.972 265.95v66.302zm-274.295-66.556l-21.526 7.599-14.342-14.342 7.599-21.526 28.269 28.269z"
+            />
+          </svg>
+          <h3 class="heading-3 mt-3 mb-3">UI/UX</h3>
+          <p>
+            Chiedigli di darti di più. Prima di far entrare internet nel tuo
+            mondo, digli di prendere la forma che assomiglia a te.
+          </p>
+        </div>
+        <div class="tasks__item">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 60 60"
+            class="tasks__icon"
+          >
+            <path
+              d="M42.595 0h-25.19A4.411 4.411 0 0 0 13 4.405v51.189A4.411 4.411 0 0 0 17.405 60h25.189A4.411 4.411 0 0 0 47 55.595V4.405A4.411 4.411 0 0 0 42.595 0zM15 8h30v38H15V8zm2.405-6h25.189A2.408 2.408 0 0 1 45 4.405V6H15V4.405A2.408 2.408 0 0 1 17.405 2zm25.19 56h-25.19A2.408 2.408 0 0 1 15 55.595V48h30v7.595A2.408 2.408 0 0 1 42.595 58z"
+            />
+            <path
+              d="M30 49c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zm0 6c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2zM26 5h4a1 1 0 1 0 0-2h-4a1 1 0 1 0 0 2zM33 5h1a1 1 0 1 0 0-2h-1a1 1 0 1 0 0 2zM56.612 4.569a.999.999 0 1 0-1.414 1.414c3.736 3.736 3.736 9.815 0 13.552a.999.999 0 1 0 1.414 1.414c4.516-4.515 4.516-11.864 0-16.38z"
+            />
+            <path
+              d="M52.401 6.845a.999.999 0 1 0-1.414 1.414c1.237 1.237 1.918 2.885 1.918 4.639s-.681 3.401-1.918 4.638a.999.999 0 1 0 1.414 1.414c1.615-1.614 2.504-3.764 2.504-6.052s-.888-4.439-2.504-6.053zM4.802 5.983a.999.999 0 1 0-1.414-1.414c-4.516 4.516-4.516 11.864 0 16.38a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414c-3.737-3.736-3.737-9.815 0-13.552z"
+            />
+            <path
+              d="M9.013 6.569a.999.999 0 0 0-1.414 0c-1.615 1.614-2.504 3.764-2.504 6.052s.889 4.438 2.504 6.053a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414c-1.237-1.237-1.918-2.885-1.918-4.639s.68-3.401 1.918-4.638a1 1 0 0 0 0-1.414z"
+            />
+          </svg>
+          <h3 class="heading-3 mt-3 mb-3">IOS development</h3>
+          <p>
+            Noi siamo dalla tua parte e lavoriamo per questo. Non solo per te,
+            ma per noi. Perché anche se siamo dipendenti da tecnologia siamo
+          </p>
+        </div>
+        <div class="tasks__item">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 480.164 480.164"
+            class="tasks__icon"
+          >
+            <path
+              d="M464.164 232.082c-3.141.102-6.352 1.938-7.594 5.027l-7.133 17.84-17.719-64.973a8.008 8.008 0 0 0-6.93-5.855c-3.359-.359-6.461 1.422-7.945 4.383l-21.789 43.578h-12.249c11.185-22.096 17.194-46.638 17.194-72 0-88.223-71.773-160-160-160s-160 71.777-160 160c0 25.371 6.015 49.92 17.206 72.021l-1.042-.021c-3.219.102-6.352 1.938-7.594 5.027l-7.133 17.84-17.719-64.973a8.008 8.008 0 0 0-6.93-5.855c-3.391-.359-6.461 1.422-7.945 4.383l-21.789 43.578H0v16h32a8.003 8.003 0 0 0 7.156-4.422l14.633-29.273 18.492 67.801A8.008 8.008 0 0 0 80 288.083a8.004 8.004 0 0 0 7.43-5.027l13.945-34.863 5.367.108c4.106 6.168 8.52 12.16 13.508 17.767a7.98 7.98 0 0 0 1.094 2.453c26.258 39.383 27.789 47.543 32.344 71.77.844 4.449 1.773 9.391 2.953 15.078 2.036 9.923 7.845 18.002 15.669 23.056-2.702 3.883-4.31 8.58-4.31 13.659 0 8.523 4.497 15.975 11.211 20.233-1.985 3.492-3.211 7.471-3.211 11.767 0 8.523 4.497 15.975 11.211 20.233-1.985 3.492-3.211 7.471-3.211 11.767 0 13.234 10.766 24 24 24h64c13.234 0 24-10.766 24-24 0-4.296-1.226-8.274-3.211-11.767 6.714-4.259 11.211-11.71 11.211-20.233 0-4.296-1.226-8.274-3.211-11.767 6.714-4.259 11.211-11.71 11.211-20.233 0-5.079-1.607-9.775-4.309-13.658 7.824-5.052 13.632-13.125 15.668-23.037 1.18-5.707 2.109-10.648 2.953-15.098 4.555-24.227 6.086-32.387 32.344-71.77a7.98 7.98 0 0 0 1.094-2.453c5.047-5.673 9.51-11.737 13.654-17.984H400a8.003 8.003 0 0 0 7.156-4.422l14.633-29.273 18.492 67.801a8.008 8.008 0 0 0 7.719 5.895 8.004 8.004 0 0 0 7.43-5.027l13.945-34.863 10.461.211.328-16-16-.324zM272 464.082h-64c-4.414 0-8-3.59-8-8s3.586-8 8-8h64c4.414 0 8 3.59 8 8s-3.586 8-8 8zm8-32h-80c-4.414 0-8-3.59-8-8s3.586-8 8-8h80c4.414 0 8 3.59 8 8s-3.586 8-8 8zm8-32h-96c-4.414 0-8-3.59-8-8s3.586-8 8-8h96c4.414 0 8 3.59 8 8s-3.586 8-8 8zm56.898-141.492a8.035 8.035 0 0 0-2.164 4.992c-25.586 38.84-27.563 49.379-32.148 73.75-.82 4.359-1.734 9.207-2.898 14.824-1.922 9.375-9.727 15.926-18.969 15.926h-15.187l21.176-120H304c13.234 0 24-10.766 24-24v-32h24c4.422 0 8-3.582 8-8v-40c0-13.234-10.766-24-24-24v-24c0-13.234-10.766-24-24-24h-8c0-13.234-10.766-24-24-24h-24c-4.422 0-8 3.582-8 8v184c0 4.418 3.578 8 8 8h22.468l-21.176 120h-34.583l-21.176-120H224c4.422 0 8-3.582 8-8v-184c0-4.418-3.578-8-8-8h-24c-13.234 0-24 10.766-24 24h-8c-13.234 0-24 10.766-24 24v24c-13.234 0-24 10.766-24 24v56c0 4.418 3.578 8 8 8h24v16c0 13.234 10.766 24 24 24h9.292l21.176 120h-15.187c-9.242 0-17.047-6.551-18.969-15.945-1.164-5.598-2.078-10.445-2.898-14.805-4.586-24.371-6.563-34.91-32.148-73.75a8.035 8.035 0 0 0-2.164-4.992C109.883 231.879 96 196.898 96 160.082c0-79.402 64.602-144 144-144s144 64.598 144 144c0 36.816-13.883 71.797-39.102 98.508zM296 136.082v-24c0-4.418-3.578-8-8-8h-24v-40h16c4.414 0 8 3.59 8 8v8c0 4.418 3.578 8 8 8h16c4.414 0 8 3.59 8 8v32c0 4.418 3.578 8 8 8h8c4.414 0 8 3.59 8 8v32h-56c-4.422 0-8 3.582-8 8v16h16v-8h16v32c0 4.41-3.586 8-8 8h-40v-112h16v16h16zm-136 24c-4.422 0-8 3.582-8 8v24h-16v-48c0-4.41 3.586-8 8-8h8c4.422 0 8-3.582 8-8v-32c0-4.41 3.586-8 8-8h8v16h16v-32c0-4.41 3.586-8 8-8h16v168h-40c-4.414 0-8-3.59-8-8v-48h16v-16h-24z"
+            />
+          </svg>
+          <h3 class="heading-3 mt-3 mb-3">Marketing</h3>
+          <p>
+            Maecenas vestibulum elit a egestas viverra. Nullam malesuada erat eu
+            nulla scelerisque, at hendrerit ex interdum. Aliquam pretium.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO SECTION -->
+    <div class="video wow fadeIn">
+      <img src="./img/image10.png" alt="image" class="video__img" />
+      <div class="video__play">
+        <img src="./img/play.png" alt="image" class="video__btn" />
+        <p class="video__text"><span>Watch</span><span>Intro Video</span></p>
+      </div>
+    </div>
+    -->
+
+    <!-- AUTHOR SECTION -->
+    <section class="authors wow fadeIn" data-wow-offset="400">
+      <h2 class="heading-2 authors__heading">We love our clients</h2>
+      <div class="authors__text">
+        <p class="">
+          We take provide in delivering Intelligent Designs and Engaging
+          Experiences for clients all over the World.
+        </p>
+      </div>
+      <div class="vertical-dash bg-orange"></div>
+
+      <div class="authors__intro slider-single">
+        <div class="">
+          <p class="authors__quote">
+            “Thanks so much for the awesome customer service. So many companies,
+            large and small, have a lot to learn from you. Great job!”
+          </p>
+          <p class="authors__name">rebecca mathews</p>
+          <p class="authors__position">CEO - UNITY.COM</p>
+        </div>
+        <div class="">
+          <p class="authors__quote">
+            “The wisdom of the wise and the experience of the ages are
+            perpetuated by quotations.”
+          </p>
+          <p class="authors__name">Iron Man</p>
+          <p class="authors__position">SEO - UNITY.COM</p>
+        </div>
+        <div class="">
+          <p class="authors__quote">
+            “We always love those who admire us, but we do not always love those
+            whom we admire.”
+          </p>
+          <p class="authors__name">Bat Man</p>
+          <p class="authors__position">Team Leader - UNITY.COM</p>
+        </div>
+        <div class="">
+          <p class="authors__quote">
+            “Irresponsibility is part of the pleasure of all art; it is the part
+            the schools cannot recognize.”
+          </p>
+          <p class="authors__name">Super Woman</p>
+          <p class="authors__position">Team Leader - UNITY.COM</p>
+        </div>
+      </div>
+
+      <div class="authors__img-box slider-nav">
+        <img
+          src="./img/author-1.png"
+          alt="image"
+          class="authors__img authors__img--active"
+        />
+        <img src="./img/author-2.png" alt="image" class="authors__img" />
+        <img src="./img/author-3.png" alt="image" class="authors__img" />
+        <img src="./img/author-4.png" alt="image" class="authors__img" />
+      </div>
+    </section>
+
+    <!-- GALLERY-2 -->
+    <div class="gallery-2 mb-7 wow fadeIn">
+      <div class="gallery-2__photo-box">
+        <img src="./img/08_03.jpg" alt="image" class="gallery-2__photo" />
+      </div>
+      <div class="gallery-2__photo-box">
+        <img src="./img/08_05.jpg" alt="image" class="gallery-2__photo" />
+      </div>
+      <div class="gallery-2__photo-box">
+        <img src="./img/08_06.jpg" alt="image" class="gallery-2__photo" />
+      </div>
+      <div class="gallery-2__photo-box">
+        <img src="./img/08_09.jpg" alt="image" class="gallery-2__photo" />
+      </div>
+      <div class="gallery-2__photo-box">
+        <img src="./img/08_11.jpg" alt="image" class="gallery-2__photo" />
+      </div>
+      <div class="gallery-2__photo-box">
+        <img src="./img/08_13.jpg" alt="image" class="gallery-2__photo" />
+      </div>
+      <div class="gallery-2__photo-box">
+        <img src="./img/08_15.jpg" alt="image" class="gallery-2__photo" />
+      </div>
+      <div class="gallery-2__photo-box">
+        <img src="./img/08_17.jpg" alt="image" class="gallery-2__photo" />
+      </div>
+      <div class="gallery-2__photo-box">
+        <img src="./img/08_18.jpg" alt="image" class="gallery-2__photo" />
+      </div>
+      <div class="gallery-2__photo-box">
+        <img src="./img/08_20.jpg" alt="image" class="gallery-2__photo" />
+      </div>
+      <div class="gallery-2__photo-box">
+        <img src="./img/08_22.jpg" alt="image" class="gallery-2__photo" />
+      </div>
+      <div class="gallery-2__photo-box">
+        <img src="./img/08_24.jpg" alt="image" class="gallery-2__photo" />
+      </div>
+      <div class="gallery-2__photo-box">
+        <img src="./img/08_25.jpg" alt="image" class="gallery-2__photo" />
+      </div>
+      <div class="gallery-2__photo-box">
+        <img src="./img/08_26.jpg" alt="image" class="gallery-2__photo" />
+      </div>
+      <div class="gallery-2__photo-box">
+        <img src="./img/08_27.jpg" alt="image" class="gallery-2__photo" />
+      </div>
+      <div class="gallery-2__photo-box">
+        <img src="./img/08_28.jpg" alt="image" class="gallery-2__photo" />
+      </div>
+      <div class="gallery-2__photo-box">
+        <img src="./img/08_29.jpg" alt="image" class="gallery-2__photo" />
+      </div>
+      <div class="gallery-2__photo-box">
+        <img src="./img/08_30.jpg" alt="image" class="gallery-2__photo" />
+      </div>
+      <div class="gallery-2__photo-box">
+        <img src="./img/08_31.jpg" alt="image" class="gallery-2__photo" />
+      </div>
+      <div class="gallery-2__photo-box">
+        <img src="./img/08_32.jpg" alt="image" class="gallery-2__photo" />
+      </div>
+      <div class="gallery-2__photo-box">
+        <img src="./img/08_33.jpg" alt="image" class="gallery-2__photo" />
+      </div>
+      <div class="gallery-2__photo-box">
+        <img src="./img/08_34.jpg" alt="image" class="gallery-2__photo" />
+      </div>
+      <div class="gallery-2__photo-box">
+        <img src="./img/08_35.jpg" alt="image" class="gallery-2__photo" />
+      </div>
+      <div class="gallery-2__photo-box">
+        <img src="./img/08_36.jpg" alt="image" class="gallery-2__photo" />
+      </div>
+    </div>
+
+    <!-- GALLERY-3 -->
+    <div class="gallery-3 mb-5 wow fadeIn">
+      <img src="./img/08_51.jpg" alt="image" class="gallery-3__photo" />
+      <img src="./img/08_54.jpg" alt="image" class="gallery-3__photo" />
+      <img src="./img/08_57.jpg" alt="image" class="gallery-3__photo" />
+      <img src="./img/08_59.jpg" alt="image" class="gallery-3__photo" />
+      <img src="./img/08_61.jpg" alt="image" class="gallery-3__photo" />
+      <img src="./img/08_64.jpg" alt="image" class="gallery-3__photo" />
+      <img src="./img/08_67.jpg" alt="image" class="gallery-3__photo" />
+      <img src="./img/08_77.jpg" alt="image" class="gallery-3__photo" />
+      <img src="./img/08_80.jpg" alt="image" class="gallery-3__photo" />
+      <img src="./img/08_83.jpg" alt="image" class="gallery-3__photo" />
+      <img src="./img/08_86.jpg" alt="image" class="gallery-3__photo" />
+      <img src="./img/08_88.jpg" alt="image" class="gallery-3__photo" />
+      <img src="./img/08_90.jpg" alt="image" class="gallery-3__photo" />
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer wow fadeIn">
+      <div class="footer__box">
+        <div class="footer__links">
+          <h4 class="heading-4 mb-3">
+            links
+          </h4>
+          <ul class="footer__links-list">
+            <li class="footer__links-item">
+              <a href="#" class="footer__links-link"
+                ><i class="fas fa-angle-right"></i> &ensp; Home</a
+              >
+            </li>
+            <li class="footer__links-item">
+              <a href="#" class="footer__links-link"
+                ><i class="fas fa-angle-right"></i> &ensp; Features</a
+              >
+            </li>
+            <li class="footer__links-item">
+              <a href="#" class="footer__links-link"
+                ><i class="fas fa-angle-right"></i> &ensp; Pages</a
+              >
+            </li>
+            <li class="footer__links-item">
+              <a href="#" class="footer__links-link"
+                ><i class="fas fa-angle-right"></i> &ensp; Portfolio</a
+              >
+            </li>
+            <li class="footer__links-item">
+              <a href="#" class="footer__links-link"
+                ><i class="fas fa-angle-right"></i> &ensp; Blog</a
+              >
+            </li>
+            <li class="footer__links-item">
+              <a href="#" class="footer__links-link"
+                ><i class="fas fa-angle-right"></i> &ensp; Shop</a
+              >
+            </li>
+            <li class="footer__links-item">
+              <a href="#" class="footer__links-link"
+                ><i class="fas fa-angle-right"></i> &ensp; About</a
+              >
+            </li>
+            <li class="footer__links-item">
+              <a href="#" class="footer__links-link"
+                ><i class="fas fa-angle-right"></i> &ensp; Our Team</a
+              >
+            </li>
+            <li class="footer__links-item">
+              <a href="#" class="footer__links-link"
+                ><i class="fas fa-angle-right"></i> &ensp; Our Services</a
+              >
+            </li>
+            <li class="footer__links-item">
+              <a href="#" class="footer__links-link"
+                ><i class="fas fa-angle-right"></i> &ensp; Coming Soon</a
+              >
+            </li>
+            <li class="footer__links-item">
+              <a href="#" class="footer__links-link"
+                ><i class="fas fa-angle-right"></i> &ensp; Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h4 class="heading-4 mb-3">contact</h4>
+          <ul class="footer__contact-list">
+            <li class="footer__contact-group">
+              <i class="footer__contact-icon fas fa-map-marker-alt"></i>
+              <p class="footer__contact-detail">
+                121 King Street, Melbourne Victoria 3000 Australia
+              </p>
+            </li>
+            <li class="footer__contact-group">
+              <i class="footer__contact-icon fas fa-envelope"></i>
+              <p class="footer__contact-detail">
+                info@unity.com
+              </p>
+            </li>
+            <li class="footer__contact-group">
+              <i class="footer__contact-icon fas fa-phone"></i>
+              <p class="footer__contact-detail">
+                1.800.321.4567
+              </p>
+            </li>
+            <li class="footer__contact-group">
+              <i class="footer__contact-icon fas fa-globe-asia"></i>
+              <p class="footer__contact-detail">
+                theunity.com
+              </p>
+            </li>
+          </ul>
+        </div>
+        <form class="footer__form">
+          <input type="text" class="footer__form-input" placeholder="Name" />
+          <input type="email" class="footer__form-input" placeholder="Email" />
+          <textarea
+            placeholder="Comments"
+            rows="4"
+            class="footer__form-input"
+          ></textarea>
+          <button class="footer__form-submit" type="submit">send</button>
+        </form>
+        <div class="footer__feed">
+          <h4 class="heading-4 mb-3">instagram feed</h4>
+          <div class="footer__feed-images">
+            <img src="./img/feed-1.png" alt="image" class="footer__feed-img" />
+            <img src="./img/feed-2.png" alt="image" class="footer__feed-img" />
+            <img src="./img/feed-3.png" alt="image" class="footer__feed-img" />
+            <img src="./img/feed-4.png" alt="image" class="footer__feed-img" />
+            <img src="./img/feed-5.png" alt="image" class="footer__feed-img" />
+            <img src="./img/feed-6.png" alt="image" class="footer__eed-img" />
+            <img src="./img/feed-7.png" alt="image" class="footer__feed-img" />
+            <img src="./img/feed-8.png" alt="image" class="footer__feed-img" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <!-- WOW -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- Slick -->
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- ISOTOPE -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- JS -->
+    <script src="./js/script.js"></script>
   </body>
 </html>

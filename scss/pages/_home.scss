@@ -1,16 +1,424 @@
 .services {
   display: flex;
-  & > * {
-    flex: 0 0 50%;
-  }
+  position: relative;
 
+  @include respond(exmed) {
+    flex-direction: column;
+  }
   &__details {
-    padding: 10rem 15rem 10rem 20rem;
+    flex: 0 0 50%;
+    padding: 10rem 7rem 10rem 20rem;
+
+    @include respond(exlarge) {
+      padding: 8rem 3rem 8rem 10rem;
+    }
+
+    @include respond(exmed) {
+      flex: 0 0 100%;
+    }
   }
 
   &__text {
     font-weight: 600;
     font-size: 1.7rem;
     margin-top: 2rem;
+  }
+
+  &__nums {
+    display: flex;
+
+    & > *:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__img-box {
+    flex: 50%;
+    position: relative;
+
+    @include respond(exmed) {
+      width: 650px;
+      margin: -15rem auto 10rem auto;
+    }
+
+    @include respond(small) {
+      width: 400px;
+    }
+
+    @include respond(exsmall) {
+      width: 250px;
+      margin: -8rem auto 10rem auto;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+    width: 100%;
+
+    @include respond(exmed) {
+      position: unset;
+    }
+  }
+
+  &__bg {
+    width: 850px;
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+
+    @include respond(exlarge) {
+      width: 700px;
+    }
+
+    @include respond(large) {
+      bottom: -40px;
+    }
+
+    @include respond(exmed) {
+      position: relative;
+      width: 100%;
+    }
+  }
+
+  &__arrow-box {
+    position: absolute;
+    background: red;
+    bottom: 295px;
+    right: 617px;
+    transform: translateX(-50%);
+    display: flex;
+    font-size: 1.7rem;
+
+    @include respond(exlarge) {
+      bottom: 261px;
+      right: 494px;
+    }
+
+    @include respond(exmed) {
+      bottom: 153px;
+      right: 462px;
+    }
+
+    @include respond(small) {
+      display: none;
+    }
+
+    & > * {
+      padding: 4rem 1rem;
+    }
+  }
+
+  &__arrow-left {
+    background: $color-blue;
+    fill: white;
+  }
+
+  &__arrow-right {
+    background: white;
+    fill: $color-blue;
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.intro {
+  background: url("../img/background2.png");
+  padding: 15rem 5rem 30rem 20rem;
+  display: flex;
+  color: white;
+  position: relative;
+  overflow: hidden;
+
+  @include respond(exmed) {
+    padding: 9rem 5rem 25rem 8rem;
+  }
+
+  @include respond(small) {
+    padding: 9rem 5rem 20rem 8rem;
+  }
+  &__details {
+    flex: 0 0 50%;
+  }
+
+  &__slide-box {
+    flex: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  &__slide {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+  }
+  &__text {
+    line-height: 2;
+  }
+
+  &__sign-box {
+    & > *:not(:last-child) {
+      margin-right: 2rem;
+    }
+    display: flex;
+    align-items: center;
+  }
+
+  &__quote {
+    font-size: 80rem;
+    font-family: $font-2;
+    line-height: 0;
+    position: absolute;
+    bottom: -20rem;
+  }
+
+  &__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: white;
+    cursor: pointer;
+  }
+
+  &__num-box {
+    text-align: center;
+    margin: 10rem 0;
+    font-size: 4.5rem;
+    font-weight: 900;
+  }
+
+  &__num {
+    & > *:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+    opacity: 0.7;
+    &--active {
+      opacity: 1;
+      font-size: 6.5rem;
+    }
+  }
+  .slick-active:nth-child(2) {
+    opacity: 1;
+    font-size: 6.5rem;
+  }
+}
+
+.gallery {
+  padding: 15rem 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include respond(med) {
+    padding: 10rem 8rem;
+  }
+
+  @include respond(small) {
+    padding: 10rem 2rem;
+  }
+
+  &__heading {
+    text-align: center;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    margin: 5rem 0;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: rgb(94, 94, 94);
+    transition: 0.3s;
+    border: 1px solid transparent;
+    &--active {
+      border-bottom: 2px solid $color-orange;
+    }
+
+    &:hover {
+      border-bottom: 2px solid $color-orange;
+    }
+  }
+  &__intro {
+    text-align: center;
+  }
+
+  &__box {
+    width: 70%;
+
+    @include respond(large) {
+      width: 100%;
+    }
+  }
+}
+
+.tasks {
+  // padding: 0rem 20rem 15rem 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__heading {
+    text-align: center;
+    padding: 0 4rem;
+  }
+
+  &__text {
+    width: 80%;
+  }
+  span {
+    display: block;
+  }
+}
+
+.video {
+  background: $color-orange;
+  height: 60rem;
+  position: relative;
+
+  &__img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    display: block;
+    width: 65%;
+    height: 108%;
+    object-fit: cover;
+    box-shadow: $boxShadow;
+
+    @include respond(small) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__play {
+    position: absolute;
+    left: 20%;
+    top: 0;
+    display: flex;
+    align-items: center;
+
+    @include respond(small) {
+      top: 5rem;
+      left: 5rem;
+    }
+
+    span {
+      display: block;
+    }
+
+    & > * {
+      margin-right: 2rem;
+    }
+  }
+
+  &__btn {
+    width: 6rem;
+    cursor: pointer;
+  }
+}
+
+.authors {
+  padding: 15rem 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__heading {
+    text-align: center;
+  }
+  @include respond(exmed) {
+    padding: 12rem 8rem;
+  }
+
+  @include respond(small) {
+    padding: 8rem 2rem;
+  }
+  & > *:not(:last-child) {
+    margin-bottom: 5rem;
+    @include respond(med) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__text {
+    width: 45%;
+    text-align: center;
+  }
+
+  &__intro {
+    width: 58%;
+    text-align: center;
+  }
+
+  &__quote {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  &__leader {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  &__name {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: $color-orange;
+    font-weight: 600;
+  }
+
+  &__position {
+    font-size: 1.3rem;
+  }
+
+  &__img-box {
+    display: flex;
+  }
+  &__img {
+    width: 5.5rem !important;
+    height: 5.5rem !important;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+    opacity: 0.7;
+    transition: 0.3s;
+    outline: none;
+
+    &--active,
+    &:hover {
+      opacity: 1;
+      transform: scale(1.3);
+    }
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+  .slider-nav {
+    .slick-track {
+      height: 100px;
+      display: flex;
+      align-items: center;
+      width: 400px !important;
+      justify-content: center;
+      transform: none !important;
+    }
   }
 }

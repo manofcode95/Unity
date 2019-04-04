@@ -1,5 +1,45 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="icon-arrow-thin-up" viewBox="0 0 20 20">
+<title>arrow-thin-up</title>
+<path d="M9 3.828l-6.071 6.071-1.414-1.414 8.485-8.485 8.485 8.485-1.414 1.414-6.071-6.071v16.172h-2v-16.172z"></path>
+</symbol>
+<symbol id="icon-arrow-thin-right" viewBox="0 0 20 20">
+<title>arrow-thin-right</title>
+<path d="M16.172 9l-6.071-6.071 1.414-1.414 8.485 8.485-8.485 8.485-1.414-1.414 6.071-6.071h-16.172v-2z"></path>
+</symbol>
+<symbol id="icon-arrow-thin-left" viewBox="0 0 20 20">
+<title>arrow-thin-left</title>
+<path d="M3.828 9l6.071-6.071-1.414-1.414-8.485 8.485 8.485 8.485 1.414-1.414-6.071-6.071h16.172v-2h-16.172z"></path>
+</symbol>
+<symbol id="icon-arrow-thin-down" viewBox="0 0 20 20">
+<title>arrow-thin-down</title>
+<path d="M9 16.172l-6.071-6.071-1.414 1.414 8.485 8.485 8.485-8.485-1.414-1.414-6.071 6.071v-16.172h-2z"></path>
+</symbol>
+<symbol id="icon-arrow-right" viewBox="0 0 20 20">
+<title>arrow-right</title>
+<path d="M16.172 9l-6.071-6.071 1.414-1.414 8.485 8.485-8.485 8.485-1.414-1.414 6.071-6.071h-16.172v-2z"></path>
+</symbol>
+<symbol id="icon-arrow-left" viewBox="0 0 20 20">
+<title>arrow-left</title>
+<path d="M3.828 9l6.071-6.071-1.414-1.414-8.485 8.485 8.485 8.485 1.414-1.414-6.071-6.071h16.172v-2h-16.172z"></path>
+</symbol>
+<symbol id="icon-arrow-down" viewBox="0 0 20 20">
+<title>arrow-down</title>
+<path d="M9 16.172l-6.071-6.071-1.414 1.414 8.485 8.485 8.485-8.485-1.414-1.414-6.071 6.071v-16.172h-2z"></path>
+</symbol>
+<symbol id="icon-arrow-up" viewBox="0 0 20 20">
+<title>arrow-up</title>
+<path d="M9 3.828l-6.071 6.071-1.414-1.414 8.485-8.485 8.485 8.485-1.414 1.414-6.071-6.071v16.172h-2v-16.172z"></path>
+</symbol>
+<symbol id="icon-arrow-thin-right1" viewBox="0 0 20 20">
+<title>arrow-thin-right1</title>
+<path d="M16.172 9l-6.071-6.071 1.414-1.414 8.485 8.485-8.485 8.485-1.414-1.414 6.071-6.071h-16.172v-2z"></path>
+</symbol>
+<symbol id="icon-arrow-thin-left1" viewBox="0 0 20 20">
+<title>arrow-thin-left1</title>
+<path d="M3.828 9l6.071-6.071-1.414-1.414-8.485 8.485 8.485 8.485 1.414-1.414-6.071-6.071h16.172v-2h-16.172z"></path>
+</symbol>
 <symbol id="icon-play2" viewBox="0 0 32 32">
 <title>play2</title>
 <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13zM12 9l12 7-12 7z"></path>

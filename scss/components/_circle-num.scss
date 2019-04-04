@@ -1,2 +1,16 @@
-.circle__num {
+.circle-num {
+  position: relative;
+  border: 1px solid black;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  &--active {
+    background: $color-orange;
+    color: white;
+    border-color: $color-orange;
+  }
 }
