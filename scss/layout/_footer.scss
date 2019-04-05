@@ -144,22 +144,17 @@
     &-images {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
-
-      & > * {
-        flex: 0 0 20%;
-        margin-bottom: 0.5rem;
-        object-fit: cover;
-        display: block;
-      }
+      justify-content: flex-start;
     }
 
     &-img {
-      flex: 45%;
+      flex: 0 0 20%;
       width: 100%;
       display: block;
       object-fit: cover;
       height: auto;
+      margin-bottom: 0.5rem;
+      margin-right: 0.5rem;
     }
   }
 }

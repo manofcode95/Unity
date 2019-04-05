@@ -8,10 +8,9 @@
     "live": "live-server",
     "start": "npm-run-all --parallel watch:sass live",
     "compile": "node-sass scss/main.scss css/style.compile.css",
-    "concat": "concat -o css/style.concat.css css/style.compile.css css/icon-fonts.css",
-    "prefix": "postcss --use autoprefixer -o css/style.prefix.css css/style.concat.css",
+    "prefix": "postcss --use autoprefixer -o css/style.prefix.css css/style.compile.css",
     "compress": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-    "build": "npm-run-all compile concat prefix compress"
+    "build": "npm-run-all compile prefix compress"
   },
   "author": "Chau",
   "license": "ISC",
