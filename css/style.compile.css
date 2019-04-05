@@ -18,7 +18,8 @@ html {
 body {
   position: relative;
   font-family: "Poppins", sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  overflow-x: hidden; }
 
 a {
   text-decoration: none; }
@@ -622,7 +623,6 @@ p {
       height: 50rem; } }
   @media only screen and (max-width: 71.875em) {
     .photos-show__photo {
-      margin: 0 2.2rem 6rem 2.2rem;
       width: 100%;
       margin: 5rem auto; } }
   @media only screen and (max-width: 71.875em) {
@@ -642,7 +642,6 @@ p {
   flex: 33.3%;
   padding: 7rem 10rem;
   border-top: 1px solid lightgray;
-  border-left: 1px solid lightgray;
   border-left: 1px solid lightgray;
   display: flex;
   flex-direction: column;
